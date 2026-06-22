@@ -89,11 +89,11 @@
 <div class="wrap">
   <header>
     <h1>Chinese Writing Toolkit <span style="font-size:.7em;color:var(--faint)">· 中文写作练习</span></h1>
-    <div class="sub">8 letter types · sentence banks · word upgrades · practice pad · for HSK4–6 learners</div>
+    <div class="sub">8 letter types · sentence banks · word upgrades · practice pad · for HSK4–6 learners · <a href="https://ordinarymantrying.com/tools/" style="color:var(--red-d)" target="_blank">more free tools</a></div>
   </header>
   <div class="crumbs" id="crumbs"></div>
   <div id="view"></div>
-  <footer>Offline · No login · Runs in browser · Progress saved locally</footer>
+  <footer>Offline · No login · Runs in browser · Progress saved locally<br>Made with ♥ by <a href="https://ordinarymantrying.com" style="color:var(--red-d);text-decoration:none" target="_blank">ordinarymantrying.com</a> · More free tools at <a href="https://ordinarymantrying.com/tools/" style="color:var(--red-d);text-decoration:none" target="_blank">Tools page</a></footer>
 </div>
 <script>
 const W = {
@@ -348,24 +348,40 @@ const W = {
   ],
   toolbox:{
     replace:[
-      {plain:'很好',better:['非常好','出色','优秀','极佳','相当不错']},
-      {plain:'很多',better:['大量','众多','丰富的','相当多的','为数不少的']},
-      {plain:'但是',better:['然而','不过','尽管如此','即便如此','话虽如此']},
-      {plain:'因为',better:['由于','鉴于','正是因为','究其原因']},
-      {plain:'所以',better:['因此','于是','从而','进而','由此可见']},
-      {plain:'我认为',better:['在我看来','就我个人而言','我坚信','我深信','我认为这件事']},
-      {plain:'说',better:['表示','指出','强调','提到','提出']},
-      {plain:'很',better:['十分','非常','极其','格外','相当','颇为']},
-      {plain:'希望',better:['期望','渴望','盼望','衷心希望','真诚地希望']},
-      {plain:'帮助',better:['协助','给予帮助','发挥重要作用','起到关键作用','做出贡献']}
+      {plain:'很好',better:['非常好','出色','优秀','极佳','相当不错','令人满意']},
+      {plain:'很多',better:['大量','众多','丰富的','相当多的','为数不少的','不计其数的']},
+      {plain:'但是',better:['然而','不过','尽管如此','即便如此','话虽如此','与此同时']},
+      {plain:'因为',better:['由于','鉴于','正是因为','究其原因','归根结底']},
+      {plain:'所以',better:['因此','于是','从而','进而','由此可见','不难看出']},
+      {plain:'我认为',better:['在我看来','就我个人而言','我坚信','我深信不疑','依我之见']},
+      {plain:'说',better:['表示','指出','强调','提到','提出','阐述','倡导']},
+      {plain:'很',better:['十分','非常','极其','格外','相当','颇为','尤为']},
+      {plain:'希望',better:['期望','渴望','盼望','衷心希望','殷切期盼','真诚期待']},
+      {plain:'帮助',better:['协助','给予帮助','发挥重要作用','起到关键作用','做出贡献','鼎力相助']},
+      {plain:'知道',better:['了解','意识到','深知','清楚地认识到','深刻体会到']},
+      {plain:'好处',better:['益处','优势','积极影响','正面效应','不可忽视的价值']},
+      {plain:'问题',better:['困境','挑战','难题','棘手之处','亟待解决的问题']},
+      {plain:'高兴',better:['欣喜','欣慰','倍感振奋','不胜欣喜','喜出望外']},
+      {plain:'努力',better:['不懈努力','锲而不舍','全力以赴','孜孜不倦','奋发图强']},
+      {plain:'改变',better:['改善','革新','焕然一新','发生深刻变化','带来质的飞跃']},
+      {plain:'重要',better:['至关重要','不可或缺','举足轻重','具有深远意义','弥足珍贵']},
+      {plain:'去',better:['前往','奔赴','抵达','踏上……之旅','赶赴']},
+      {plain:'告诉',better:['通知','告知','使……了解','让……明白','郑重提醒']},
+      {plain:'学习',better:['钻研','深造','潜心学习','汲取知识','精进技能']},
+      {plain:'有名',better:['享誉','声名远播','赫赫有名','闻名遐迩','久负盛名']},
+      {plain:'得到',better:['获得','赢得','取得','荣获','收获丰厚']},
+      {plain:'完成',better:['圆满完成','顺利竣工','如期完成','付诸实践','落到实处']},
+      {plain:'方法',better:['途径','策略','举措','有效机制','切实可行的方案']},
+      {plain:'开始',better:['着手','随即','付诸行动','迈出第一步','正式启动']}
     ],
     connectors:[
-      {group:'并列/递进 (Adding)',words:['此外','另外','同时','而且','加之','不仅如此']},
-      {group:'转折/对比 (Contrast)',words:['然而','但是','不过','尽管如此','即便如此','与此相反']},
-      {group:'因果 (Cause & Effect)',words:['因此','所以','于是','从而','由于','鉴于','由此可见']},
-      {group:'举例/说明 (Example)',words:['例如','比如','以……为例','换句话说','具体来说']},
-      {group:'顺序/时间 (Sequence)',words:['首先','然后','接着','之后','最终','与此同时']},
-      {group:'总结 (Summary)',words:['总之','综上所述','总而言之','由此可见','简而言之']}
+      {group:'并列/递进 (Adding)',words:['此外','另外','同时','而且','加之','不仅如此','更重要的是','值得一提的是']},
+      {group:'转折/对比 (Contrast)',words:['然而','但是','不过','尽管如此','即便如此','与此相反','话虽如此','事实上']},
+      {group:'因果 (Cause & Effect)',words:['因此','所以','于是','从而','由于','鉴于','由此可见','正是因为这一原因']},
+      {group:'举例/说明 (Example)',words:['例如','比如','以……为例','换句话说','具体来说','举例而言','不妨以……为证']},
+      {group:'顺序/时间 (Sequence)',words:['首先','其次','再者','最后','与此同时','在此基础上','随后','最终']},
+      {group:'总结 (Summary)',words:['总之','综上所述','总而言之','由此可见','简而言之','不难得出结论']},
+      {group:'条件/假设 (Condition)',words:['如果','假如','一旦','倘若','只要','在……的前提下','除非']}
     ],
     patterns:[
       {name:'不但……而且 (Not only … but also)',zh:'他不但学习努力，而且乐于助人。',en:'He is not only hardworking but also always ready to help others.'},
@@ -375,29 +391,53 @@ const W = {
       {name:'是……的 Emphasis',zh:'我是去年开始学中文的。',en:'It was last year that I started learning Chinese.'},
       {name:'使/让 Causative',zh:'这次经历让我对中国文化有了更深的了解。',en:'This experience gave me a much deeper understanding of Chinese culture.'},
       {name:'以……为例 (Taking … as an example)',zh:'以北京为例，这座城市将传统与现代完美融合。',en:'Taking Beijing as an example, the city perfectly blends tradition and modernity.'},
-      {name:'由此可见 (From this we can see)',zh:'由此可见，学好语言需要长期的坚持。',en:'From this we can see that mastering a language requires long-term persistence.'}
+      {name:'由此可见 (From this we can see)',zh:'由此可见，学好语言需要长期的坚持。',en:'From this we can see that mastering a language requires long-term persistence.'},
+      {name:'之所以……是因为 (The reason … is)',zh:'我之所以学中文，是因为我对中国文化充满好奇。',en:'The reason I study Chinese is that I am deeply curious about Chinese culture.'},
+      {name:'无论……都 (No matter … always)',zh:'无论遇到多大的困难，他都不放弃。',en:'No matter what difficulties he faces, he never gives up.'},
+      {name:'不仅……还 (Not only … but also)',zh:'这次旅行不仅让我开阔了眼界，还结交了许多新朋友。',en:'This trip not only broadened my horizons but also helped me make many new friends.'},
+      {name:'通过……来 (Through … to)',zh:'通过每天坚持练习，他逐渐掌握了中文的发音。',en:'By practising consistently every day, he gradually mastered Chinese pronunciation.'},
+      {name:'尽管……仍然 (Despite … still)',zh:'尽管面临重重挑战，我们仍然坚持了下来。',en:'Despite facing numerous challenges, we persisted all the same.'}
+    ],
+    formal:[
+      {zh:'特此函告，……',en:'We hereby inform you that ……'},
+      {zh:'兹通知各位……',en:'This is to notify all parties that ……'},
+      {zh:'如蒙垂询，请随时联系。',en:'Should you require further information, please do not hesitate to contact us.'},
+      {zh:'敬请谅解，如有不便，深感抱歉。',en:'Your understanding is appreciated; we apologise for any inconvenience caused.'},
+      {zh:'烦请不吝赐复。',en:'Your kind reply would be most appreciated.'},
+      {zh:'随函附上相关材料，供您参考。',en:'Please find enclosed the relevant materials for your reference.'},
+      {zh:'此致敬礼。',en:'Yours sincerely. (standard formal close)'},
+      {zh:'请予关照，不胜感激。',en:'Your kind attention to this matter is greatly appreciated.'},
+      {zh:'有劳您拨冗回复。',en:'Thank you for taking the time to reply.'},
+      {zh:'如有疑问，欢迎进一步沟通。',en:'Please feel free to reach out if you have any questions.'}
     ],
     opens:[
       {zh:'如今，越来越多的人开始意识到……的重要性。',en:'Nowadays, more and more people are beginning to realise the importance of ……'},
       {zh:'正如中国谚语所说：「……」',en:'As a Chinese saying goes: \'……\''},
       {zh:'谈到……，人们的看法各不相同。',en:'When it comes to ……, opinions vary from person to person.'},
-      {zh:'近年来，……已经成为人们关注的热点话题。',en:'In recent years, …… has become a hot topic that attracts widespread attention.'}
+      {zh:'近年来，……已经成为人们关注的热点话题。',en:'In recent years, …… has become a hot topic that attracts widespread attention.'},
+      {zh:'众所周知，……对我们的生活有着深远的影响。',en:'As is well known, …… has a profound impact on our lives.'},
+      {zh:'在当今社会，……的问题日益突出。',en:'In today\'s society, the issue of …… is becoming increasingly prominent.'},
+      {zh:'随着时代的发展，……已经成为不可忽视的重要课题。',en:'With the development of the times, …… has become an issue that can no longer be ignored.'},
+      {zh:'每当提起……，我总是感慨万千。',en:'Whenever …… is mentioned, I am filled with deep feelings.'}
     ],
     closes:[
       {zh:'总之，只有……，我们才能……',en:'In short, only by …… can we ……'},
       {zh:'我坚信，只要……，未来一定会更美好。',en:'I firmly believe that as long as ……, the future will certainly be brighter.'},
       {zh:'由此可见，……的重要性不言而喻。',en:'From this we can see that the importance of …… goes without saying.'},
-      {zh:'让我们携手共进，为……而努力。',en:'Let us work together and strive for ……'}
+      {zh:'让我们携手共进，为……而努力。',en:'Let us work together and strive for ……'},
+      {zh:'希望通过我们的共同努力，……能够早日实现。',en:'I hope that through our joint efforts, …… can be achieved as soon as possible.'},
+      {zh:'无论前路多么漫长，我都将坚定地走下去。',en:'No matter how long the road ahead, I will continue walking steadily forward.'},
+      {zh:'相信这次机会对我们双方来说都是宝贵的。',en:'I believe this opportunity will be valuable for both of us.'}
     ],
     checklist:[
-      '文体对了吗？（信件/通知/演讲稿 格式正确？）',
-      '要点齐全？有没有漏掉重要信息？',
-      '是否分段清晰——开头、主体、结尾各就各位？',
-      '用了2-3个高分句型吗？（不但…而且/虽然…但是/只有…才）',
-      '句子之间有连接词吗？逻辑顺畅？',
-      '是否把「很/好/说」换成了更高级的表达？',
-      '标点符号正确吗？中文用全角标点（，。！？）',
-      '字数达标了吗？'
+      {zh:'文体对了吗？（信件/通知/演讲稿 格式正确？）',en:'Correct format? (letter / notice / speech layout)'},
+      {zh:'要点齐全？有没有漏掉重要信息？',en:'All key points covered? Nothing important missing?'},
+      {zh:'是否分段清晰——开头、主体、结尾各就各位？',en:'Clear paragraphs? Opening, body, and closing in place?'},
+      {zh:'用了2-3个高分句型吗？（不但…而且/虽然…但是/只有…才）',en:'Used 2–3 advanced patterns? (不但…而且 / 虽然…但是 / 只有…才)'},
+      {zh:'句子之间有连接词吗？逻辑顺畅？',en:'Connectors between sentences? Logic flows well?'},
+      {zh:'是否把「很/好/说」换成了更高级的表达？',en:'Upgraded plain words? (很→十分, 好→出色, 说→指出)'},
+      {zh:'标点符号正确吗？中文用全角标点（，。！？）',en:'Punctuation correct? Chinese uses full-width marks（，。！？）'},
+      {zh:'字数达标了吗？',en:'Word/character count meets the requirement?'}
     ]
   }
 };
@@ -488,10 +528,14 @@ function renderTool(){
   h+='<div class="block"><h3>Advanced Patterns &#x9AD8;&#x5206;&#x53E5;&#x578B;</h3>';
   T.patterns.forEach(p=>{h+=`<div class="pat"><div class="pn">${esc(p.name)}</div><div class="pe"><button class="say" data-say="${esc(p.zh)}">&#x1F50A;</button><span>${esc(p.zh)}</span></div><div class="pz">${esc(p.en)}</div></div>`;});
   h+='</div>';
+  h+='<div class="block"><h3>Formal Phrases &#x6B63;&#x5F0F;&#x5957;&#x8BED;</h3>';
+  h+='<p style="font-size:.8rem;color:var(--faint);margin:0 0 9px">Set phrases for formal letters and announcements. Copy and adapt as needed.</p>';
+  T.formal.forEach(f=>{h+=`<div class="sent"><div class="se"><button class="say" data-say="${esc(f.zh)}">&#x1F50A;</button><span>${esc(f.zh)}</span></div><div class="sz">${esc(f.en)}</div></div>`;});
+  h+='</div>';
   h+='<div class="block"><h3>Opening sentences &#x4E07;&#x80FD;&#x5F00;&#x5934;</h3>'+sentList(T.opens)+'</div>';
   h+='<div class="block"><h3>Closing sentences &#x4E07;&#x80FD;&#x7ED3;&#x5C3E;</h3>'+sentList(T.closes)+'</div>';
   h+='<div class="block"><h3>Self-check Checklist &#x5199;&#x4F5C;&#x81EA;&#x68C0;&#x6E05;&#x5355;</h3><ul class="check">';
-  T.checklist.forEach(c=>{h+=`<li>${esc(c)}</li>`;});
+  T.checklist.forEach(c=>{h+=`<li><span style="color:var(--ink)">${esc(c.zh)}</span><span style="display:block;font-size:.8rem;color:var(--faint);margin-top:1px">${esc(c.en)}</span></li>`;});
   h+='</ul></div>';
   $('view').innerHTML=h;
   wireSay();
@@ -515,7 +559,7 @@ function renderPad(){
       <button id="btn-copy" class="primary" onclick="navigator.clipboard.writeText(document.getElementById('pad-ta').value).then(()=>{document.getElementById('btn-copy').textContent='Copied ✓';setTimeout(()=>{document.getElementById('btn-copy').textContent='Copy'},1500)})">Copy</button>
     </div></div></div>`;
   h+='<div class="block"><h3>Self-check Checklist &#x5199;&#x4F5C;&#x81EA;&#x68C0;&#x6E05;&#x5355;</h3><ul class="check">';
-  T.checklist.forEach(c=>{h+=`<li>${esc(c)}</li>`;});
+  T.checklist.forEach(c=>{h+=`<li><span style="color:var(--ink)">${esc(c.zh)}</span><span style="display:block;font-size:.8rem;color:var(--faint);margin-top:1px">${esc(c.en)}</span></li>`;});
   h+='</ul></div>';
   $('view').innerHTML=h;
   updateWc();
